@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D4037</color>
+    <color name="colorPrimaryDark">#3E2723</color>
+    <color name="colorAccent">#00C853</color>
+
+    <color name="Option1">#C62828</color>
+    <color name="Option2">#FF5722</color>
+    <color name="Option3">#FFFF00</color>
+    <color name="Option4">#64DD17
+    </color>
+    <color name="Option5">#2E7D32</color>
+    <color name="Option6">#29B6F6</color>
+    <color name="Option7">#3949AB</color>
+    <color name="Option8">#7d3c98</color>
+
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="Gray">#7e7e7e</color>
+    <color name="Lighter_Gray">#bdbdbd</color>
+    <color name="Light_Gray">#d7d7d7</color>
+    <color name="Red">#FF0000</color>
+    <!-- Screens Background Color-->
+    <color name="bg_screen1">#b12515</color>
+    <color name="bg_screen2">#FFBB00</color>
+    <color name="bg_screen3">#74A443</color>
+    <color name="background1">#F0F0F0  </color>
+    <color name="background2">#E53935</color>
+    <color name="background3">#FFCCBC</color>
+    <color name="background4">#FFCDD2</color>
+</resources>

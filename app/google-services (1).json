@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "428134763366",
+    "firebase_url": "https://enerbet-5b45c.firebaseio.com",
+    "project_id": "enerbet-5b45c",
+    "storage_bucket": "enerbet-5b45c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428134763366:android:4d97b5e1681cfb5e",
+        "android_client_info": {
+          "package_name": "com.dhaval.enerbet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428134763366-iig46mav7hoq78ub0n4923hu45bpk9ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dhaval.enerbet",
+            "certificate_hash": "156949294a7c656eafb3f09d06cc13b4624da646"
+          }
+        },
+        {
+          "client_id": "428134763366-l6ordfnvk3k28lgfgokdve1108h1n4hu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0WI-d2LXmu3A3qlWuUgYg5EW3IC1Sg_4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428134763366-l6ordfnvk3k28lgfgokdve1108h1n4hu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
