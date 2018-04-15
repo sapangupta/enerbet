@@ -30,6 +30,7 @@ public class challenges extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_challenges);
 
+        setTitle("Challenges");
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);

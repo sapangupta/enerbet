@@ -4,12 +4,11 @@
 
     <application
         android:allowBackup="true"
-
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@drawable/transparent_logo1"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".Splash"
             android:label="@string/app_name"
@@ -26,7 +25,9 @@
         <activity android:name=".Login" />
         <activity android:name=".MyProfile" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Signup"></activity>
+        <activity android:name=".Signup" />
+        <activity android:name=".Challenge" />
+        <activity android:name=".Payment"></activity>
     </application>
 
 </manifest>

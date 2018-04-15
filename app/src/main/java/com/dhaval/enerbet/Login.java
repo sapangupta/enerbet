@@ -29,6 +29,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,13 +41,14 @@ public class Login extends AppCompatActivity {
     private static final int RC_SIGN_IN = 1;
     FirebaseUser user;
     private GoogleSignInClient mGoogleSignInClient;
-
+    DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference();
         mGoogleBtn = (SignInButton) findViewById(R.id.google_button);
         mGoogleBtn.setSize(SignInButton.SIZE_WIDE);
         mGoogleBtn.setColorScheme(SignInButton.COLOR_DARK);
@@ -54,8 +57,8 @@ public class Login extends AppCompatActivity {
         button_login = findViewById(R.id.button_Login);
         button_signup = findViewById(R.id.button_Sign_up);
 
-        Toolbar toolbar = findViewById(R.id.toolbar1);
-        setSupportActionBar(toolbar);
+       // Toolbar toolbar = findViewById(R.id.toolbar1);
+      //  setSupportActionBar(toolbar);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
@@ -120,6 +123,7 @@ public class Login extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Toast.makeText(Login.this,"Success",Toast.LENGTH_LONG).show();
                             FirebaseUser user = mAuth.getCurrentUser();
+                            mDatabase.child("users").child(user.getUid()).child("money").setValue(0);
                             startActivity(new Intent(Login.this, MainActivity.class));
 
                         } else {
@@ -139,7 +143,8 @@ public class Login extends AppCompatActivity {
 
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        //updateUI(account);
+       if(currentUser!=null)
+           startActivity(new Intent(Login.this, MainActivity.class));
 
     }
 

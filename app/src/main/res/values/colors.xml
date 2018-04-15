@@ -16,10 +16,11 @@
 
     <color name="White">#ffffff</color>
     <color name="Black">#000000</color>
-    <color name="Gray">#7e7e7e</color>
+    <color name="Gray">#BDBDBD</color>
+    <color name="Green">#00C853</color>
     <color name="Lighter_Gray">#bdbdbd</color>
     <color name="Light_Gray">#d7d7d7</color>
-    <color name="Red">#FF0000</color>
+    <color name="Red">#F44336</color>
     <!-- Screens Background Color-->
     <color name="bg_screen1">#b12515</color>
     <color name="bg_screen2">#FFBB00</color>

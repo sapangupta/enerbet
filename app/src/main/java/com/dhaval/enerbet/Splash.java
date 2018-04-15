@@ -23,6 +23,7 @@ public class Splash extends AppCompatActivity {
             Thread.currentThread().interrupt();
         }
         startActivity(new Intent(Splash.this, Login.class));
+        finish();
 
     }
 }

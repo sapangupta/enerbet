@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    tools:context=".Challenge">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/image_cha"
+        android:maxHeight="200dp"
+        android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:padding="25dp"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/challenge_name3"
+                    android:textColor="@color/Black"
+                    android:text="Loading..."/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/player_count3"
+                        android:textSize="16dp"
+                        android:textColor="@color/Black"
+                        android:text="Loading..."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bet_amount3"
+                        android:gravity="center_horizontal"
+                        android:textSize="16dp"
+                        android:textColor="@color/Black"
+                        android:layout_weight="1"
+                        android:text="Loading..."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pot_value3"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/Black"
+                        android:textSize="16dp"
+                        android:layout_weight="1"
+                        android:text="Loading..."/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Description"
+                    android:textColor="@color/Black"
+                    android:id="@+id/description_2"
+                    android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/timer"
+            android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="Join the Challenge"
+                    android:id="@+id/join_challenge"
+                    android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Share the Challenge"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
